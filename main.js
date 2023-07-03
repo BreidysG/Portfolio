@@ -3,6 +3,10 @@ console.log(sections);
 let navLinks = document.querySelectorAll("header nav a");
 console.log(navLinks);
 
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+
 window.onscroll = () =>{
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -20,6 +24,11 @@ window.onscroll = () =>{
 
     let header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY>100);
+    menuIcon.classList.remove("bx-x");
+    navbar.classList.remove("active");
 }
 
-
+menuIcon.onclick = () =>{
+    menuIcon.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
+}
