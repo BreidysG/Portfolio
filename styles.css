@@ -69,7 +69,10 @@ section {
 .navbar a.active {
     color: var(--main-color);
 }
-
+.navbar a.inactive{
+    color: gray;
+    cursor: text;
+}
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -154,6 +157,7 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: 0.5s;
+    cursor:pointer;
 }
 
 .btn:hover{
@@ -168,8 +172,28 @@ span {
     background-color: var(--second-bg-color);
 }
 
+.about-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--second-bg-color);
+}
+
+.about-view-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 .about-img img {
     width: 35vw ;
+}
+
+.about-img-view img {
+    width: 40vw ;
 }
 
 .heading{
@@ -352,6 +376,10 @@ span {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+}
+
+.footer-about{
+    justify-content: center;
 }
 
 .footer-text p{
