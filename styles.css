@@ -405,6 +405,10 @@ span {
     html{
         font-size: 55%;
     }
+
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 991px) {
@@ -419,6 +423,8 @@ span {
     .services {
         padding-bottom: 7rem;
     }
+
+    
 
     .portfolio{
         padding-bottom: 7rem;
@@ -481,9 +487,17 @@ span {
         flex-direction: column-reverse;
     }
 
+    .about-view-content{
+        flex-direction: column;
+    }
+
     .about-img img {
         width: 70vw;
         margin-top: 4rem;
+    }
+
+    .about-img-view img{
+        width: 70vw;
     }
 
     .services h2{
@@ -494,9 +508,7 @@ span {
         margin-bottom: 3rem;
     }
 
-    .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+    
 }
 
 @media (max-width: 617px){

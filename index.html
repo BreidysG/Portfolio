@@ -75,19 +75,18 @@
                 <i class="bx bx-code-alt"></i>
                 <h3>Desarrollo Web Frontend</h3>
                 <p>Como desarrollador web Frontend, me encargaré de llevar a la practica tus ideas y proyectos mediante codigo en HTML, CSS y JavaScript, haciendo uso de las ultimas tecnologías y tendencias del mercado, con el fin de hacer realidad tus objetivos.</p>
-                <a href="#" class="btn">Leer más</a>
             </div>
 
             <div class="services-box">
-                <i class='bx bxs-graduation'></i>                <h3>Ingenieria de Sistemas</h3>
+                <i class='bx bxs-graduation'></i>                
+                <h3>Ingenieria de Sistemas</h3>
                 <p>Como ingeniero de sistemas, tengo la capacidad de diseñar, desarrollar, implementar y mantener sistemas. También tengo habilidades en gestión de proyectos, manejo de bases de datos, seguridad informática y redes.</p>
-                <a href="#" class="btn">Leer más</a>
             </div>
 
             <div class="services-box">
-                <i class='bx bx-film'></i>                <h3>Edición de videos</h3>
+                <i class='bx bx-film'></i>                
+                <h3>Edición de videos</h3>
                 <p>Puedo crear contenido visual atractivo y de alta calidad utilizando herramientas de edición de video y diseño gráfico. Puedo también crear flyers y materiales de marketing para crear piezas publicitarias efectivas.</p>
-                <a href="#" class="btn">Leer más</a>
             </div>
         </div>
     </section>
@@ -165,18 +164,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Para <span>Contactos</span></h2>
         
-        <form action="#">
+        <form action="https://formspree.io/f/xaygyyjr"
+        method="POST" id="form">
             <div class="input-box">
-                <input type="text" placeholder="Nombre completo">
-                <input type="email" placeholder="Correo electronico">
+                <input type="text" placeholder="Nombre completo" name="name" required>
+                <input type="email" placeholder="Correo electronico" name="email" required>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Número telefonico">
-                <input type="text" placeholder="Asunto">
+                <input type="number" placeholder="Número telefonico" name="phone" required>
+                <input type="text" placeholder="Asunto" name="asunto" required>
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje" name="message" required></textarea>
 
             <input type="submit" value="Enviar mensaje" class="btn">
         </form>

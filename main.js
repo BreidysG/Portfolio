@@ -5,6 +5,7 @@ console.log(navLinks);
 
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
+const $form = document.querySelector("#form");
 
 const typed = new Typed(".multiple-text", {
     strings: ["Frontend Developer", "Ingeniero de Sistemas"],
@@ -13,6 +14,26 @@ const typed = new Typed(".multiple-text", {
     backDelay: 100,
     loop: true
 });
+
+$form.addEventListener("submit", handleSumit)
+
+async function handleSumit(event){
+    event.preventDefault();
+    const form = new FormData(this);
+    const response = await  fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            "Accept": "aplication/json"
+        }
+    });
+
+    if(response.ok){
+        this.reset();
+        alert("Gracias por contactarme, ¡te escribiré pronto! :)")
+    }
+}
+
 
 
 window.onscroll = () =>{
