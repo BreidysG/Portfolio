@@ -222,49 +222,8 @@ span {
     margin: 2rem 0 3rem;
 }
 
-.services h2{
-    margin-bottom: 5rem;
-}
-
-.services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.services-container .services-box{
-    flex: 1 1 30rem;
-    background-color: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
-}
-
-.services-container .services-box:hover{
-    border-color: var(--main-color);
-    transform: scale(1.02);
-}
-
-.services-box i{
-    font-size: 7rem;
-    color: var(--main-color);
-}
-
-.services-box h3{
-    font-size: 2.6rem;
-}
-
-.services-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-}
-
 .portfolio {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .portfolio h2{
@@ -347,6 +306,10 @@ span {
     margin-bottom: 3rem;
 }
 
+.contact{
+    background: var(--second-bg-color);
+}
+
 .contact form .input-box{
     display: flex;
     justify-content: space-between;
@@ -358,7 +321,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -382,7 +345,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-about{
@@ -426,12 +389,6 @@ span {
     section{
         padding: 10rem 3% 2rem;
     }
-
-    .services {
-        padding-bottom: 7rem;
-    }
-
-    
 
     .portfolio{
         padding-bottom: 7rem;
@@ -512,11 +469,7 @@ span {
 
     .about-img-view img{
         width: 70vw;
-    }
-
-    .services h2{
-        margin-bottom: 3rem;
-    }
+    
 
     .portfolio h2 {
         margin-bottom: 3rem;
@@ -558,6 +511,7 @@ span {
     text-align: center ;
     margin-top: 2rem;
    }
+}
 }
 
 

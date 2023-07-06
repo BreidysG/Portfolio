@@ -1,7 +1,5 @@
 let sections= document.querySelectorAll("section");
-console.log(sections);
 let navLinks = document.querySelectorAll("header nav a");
-console.log(navLinks);
 
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
