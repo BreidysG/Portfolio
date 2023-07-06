@@ -238,6 +238,7 @@ span {
 }
 
 .portfolio-container .portfolio-box{
+    height: 20rem;
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -443,8 +444,7 @@ span {
     }
 
     .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
+        display: none;
     }
 
     .social-media a{
@@ -482,6 +482,8 @@ span {
     .portfolio-container{
         grid-template-columns: repeat(1, 1fr);
     }
+
+
 }
 
 @media (max-width: 450px){
