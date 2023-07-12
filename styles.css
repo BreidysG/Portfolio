@@ -53,7 +53,7 @@ section {
 
 .logo{
     width: 18rem;
-    cursor: default;
+    cursor: pointer;
 }
 
 .navbar a {
